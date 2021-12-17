@@ -21,16 +21,21 @@
                 </h2>
                 <nav class="nav">
                     <ul class="nav__ul">
-                        <li><a href="#">Overwiew</a></li>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Technology</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#hero">Overview</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Sign Up</a></li>
                     </ul>
                 </nav>
+                <button class="burgermenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </header>
-        <section class="hero">
+        <section id="hero" class="hero">
             <div class="container hero__box">
                 <h1 class="hero__heading">Cloudbudget</h1>
                 <p class="hero__p">Cloud budget management for everyone. Only €69.95 a Month After a 7 Day Trial of Up&nbsp;to&nbsp;€4.99</p>
@@ -38,7 +43,7 @@
             </div>
         </section>
     </div>
-    <section class="features">
+    <section id="features" class="features">
         <div class="container">
             <h2 class="features__heading">Features</h2>
             <div class="features__grid">
@@ -69,36 +74,80 @@
             </div>
         </div>
     </section>
-    <section class="technologies">
+    <section id="technology" class="technologies">
         <div class="container">
-            <h2 class="technologies__heading">Technologies</h2>
+            <h2 class="technologies__heading">Technology</h2>
             <div class="technologies__box">
                 <article class="technology">
-                    <img src="/img/svg/icon-01.svg" alt="" class="technology__number" />
-                    <img src="" alt="" class="technology__img" />
+                    <img class="technology__img technology__img--margin-1-5" src="/img/svg/icon-01.svg" alt="" />
                     <h3 class="technology__heading">Cloud Storage</h3>
                     <p class="technology__p">Access your account from anywhere in the world on any device</p>
                 </article>
                 <article class="technology">
-                    <img src="/img/svg/icon-02.svg" alt="" class="technology__number" />
-                    <img src="/img/svg/icon-secure.svg" alt="" class="technology__img" />
+                    <img class="technology__img technology__img--margin-11-35" src="/img/svg/icon-02.svg" alt="" />
                     <h3 class="technology__heading">Secure</h3>
                     <p class="technology__p">All your information is stored on secure cloud servers</p>
                 </article>
                 <article class="technology">
-                    <img src="/img/svg/icon-03.svg" alt="" class="technology__number" />
-                    <img src="/img/svg/icon-pdf.svg" alt="" class="technology__img" />
+                    <img class="technology__img technology__img--margin-16" src="/img/svg/icon-03.svg" alt="" />
                     <h3 class="technology__heading">PDF Download</h3>
                     <p class="technology__p">Download any of your reports in PDF format</p>
                 </article>
                 <article class="technology">
-                    <img src="/img/svg/icon-04.svg" alt="" class="technology__number" />
-                    <img src="/img/svg/icon-csv.svg" alt="" class="technology__img" />
+                    <img class="technology__img technology__img--margin-15" src="/img/svg/icon-04.svg" alt="" />
                     <h3 class="technology__heading">CSV Download</h3>
                     <p class="technology__p">All your information is stored on secure cloud servers</p>
                 </article>
             </div>
         </div>
     </section>
+    <section class="info">
+        <div class="container info__grid">
+            <div class="info__description">
+                <h2 class="info__heading">Stay focused on saving<br>money</h2>
+                <p class="info__p">It is important to stay focused on saving money in any way you can. We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. Simply join today to get started!</p>
+                <ul class="info__ul">
+                    <li><img class="info__img" src="/img/svg/info1.svg" alt="" /></li>
+                    <li><img class="info__img info__img--margin" src="/img/svg/info2.svg" alt="" /></li>
+                    <li><img class="info__img" src="/img/svg/info3.svg" alt="" /></li>
+                </ul>
+            </div>
+            <div class="slider">
+                <img src="img/slider1.png" alt="" class="slider__img slider__img--1" />
+                <img src="img/slider2.png" alt="" class="slider__img slider__img--2" />
+                <img src="img/slider3.png" alt="" class="slider__img slider__img--3" />
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container contact__box">
+            <div class="contact__description">
+                <h2 class="contact__heading">Contact</h2>
+                <p class="contact__p">Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
+            </div>
+            <div class="contact__form">
+                <label class="contact__label contact__label--small">
+                    <input type="text" class="contact__input contact__input--first-name" placeholder="First Name" name="contact_first_name" />
+                </label>
+                <label class="contact__label contact__label--small">
+                    <input type="text" class="contact__input contact__input--last-name" placeholder="Last Name" name="contact_last_name" />
+                </label>
+                <label class="contact__label">
+                    <input type="tel" class="contact__input contact__input--tel" placeholder="Phone number" name="contact_tel" />
+                </label>
+                <label class="contact__label">
+                    <select class="contact__input contact__select" name="contact_service">
+                        <option class="option" value="" disabled selected hidden>Select Service</option>
+                        <option class="option" value="option1">Option 1</option>
+                        <option class="option" value="option2">Option 2</option>
+                    </select>
+                </label>
+                <input type="submit" class="contact__submit" value="Submit Now" />
+            </div>
+        </div>
+    </section>
 </body>
+<script src="/js/burgermenu.js"></script>
+<script src="/js/slider.js"></script>
+<script src="/js/validation.js"></script>
 </html>
