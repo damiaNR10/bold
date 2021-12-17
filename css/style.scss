@@ -649,39 +649,36 @@ textarea {
 
     &__img {
 
-        //@media screen and (min-width: $desktop) {
+        &--1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            opacity: 1;
+            left: 0;
+            top: 0;
+            animation: fadeIn 1s;
+        }
 
-            &--1 {
-                position: relative;
-                width: 100%;
-                height: auto;
-                z-index: 1;
-                opacity: 1;
-                left: 0;
-                top: 0;
-                animation: fadeIn 1s;
-            }
+        &--2 {
+            position: absolute;
+            left: -44px;
+            height: calc(100% - 44px);
+            top: 22px;
+            opacity: 0.5;
+            z-index: -1;
+            animation: fadeOut 1s;
+        }
 
-            &--2 {
-                position: absolute;
-                left: -44px;
-                height: calc(100% - 44px);
-                top: 22px;
-                opacity: 0.5;
-                z-index: -1;
-                animation: fadeOut 1s;
-            }
-
-            &--3 {
-                position: absolute;
-                right: -44px;
-                height: calc(100% - 44px);
-                top: 22px;
-                opacity: 0.5;
-                z-index: -1;
-                animation: fadeOut 1s;
-            }
-        //}
+        &--3 {
+            position: absolute;
+            right: -44px;
+            height: calc(100% - 44px);
+            top: 22px;
+            opacity: 0.5;
+            z-index: -1;
+            animation: fadeOut 1s;
+        }
     }
 }
 
