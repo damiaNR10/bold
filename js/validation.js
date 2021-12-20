@@ -1,3 +1,5 @@
+//Jako przykład walidacji zrobiłem sprawdzenie wyłącznie długości wpisanych wartości (>6)
+
 const firstNameInput = document.querySelector('.contact__input--first-name');
 const lastNameInput = document.querySelector('.contact__input--last-name');
 const telInput = document.querySelector('.contact__input--tel');
